@@ -1,0 +1,85 @@
+## Frontend Dependencies
+
+### Core React Libraries
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **react** | ^18.2.0 | The core React library that provides the foundation for building user interfaces with components.
+| **react-dom** | ^18.2.0 | Provides DOM-specific methods that enable React to work with the browser DOM. Used for rendering React components to the web page.
+
+
+### Routing
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **react-router-dom** | ^6.10.0 | Implements declarative routing for React applications. Enables navigation between different components without page reloads, maintaining a single-page application experience. Used for all page navigation and protected routes in the application.
+
+
+### API Communication
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **axios** | ^1.3.5 | Promise-based HTTP client for making API requests to the backend server. Provides an easy-to-use interface for handling requests, responses, and errors. Used for all data fetching and API interactions.
+
+
+### UI and Animation
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **framer-motion** | ^12.12.1 | Animation library for React that makes it easy to create smooth animations and transitions. Used for page transitions, interactive elements, and micro-interactions throughout the UI.
+| **lucide-react** | ^0.511.0 | A collection of simply beautiful open-source icons as React components. Used for consistent iconography throughout the application.
+| **react-icons** | ^5.5.0 | Includes popular icon libraries as React components. Provides additional icon options beyond what's available in Lucide.
+
+
+### Styling
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **tailwindcss** | ^4.1.7 | A utility-first CSS framework for rapidly building custom user interfaces. Used for all styling in the application with a consistent design system.
+| **@tailwindcss/postcss** | ^4.1.7 | Integration between Tailwind CSS and PostCSS.
+| **autoprefixer** | ^10.4.21 | PostCSS plugin to parse CSS and add vendor prefixes automatically. Ensures cross-browser compatibility.
+| **postcss** | ^8.5.3 | Tool for transforming CSS with JavaScript plugins. Foundation for the CSS processing pipeline.
+| **postcss-cli** | ^10.1.0 | Command-line interface for PostCSS. Used in build scripts for CSS processing.
+| **postcss-loader** | ^8.1.1 | Webpack loader for PostCSS. Integrates PostCSS with the build process.
+
+
+## Backend Dependencies
+
+### Server Framework
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **express** | ^4.18.2 | Fast, unopinionated, minimalist web framework for Node.js. Provides the foundation for the backend API, handling routes, middleware, and HTTP requests/responses.
+| **cors** | ^2.8.5 | Express middleware for enabling Cross-Origin Resource Sharing. Allows the frontend to make requests to the backend when they're on different domains or ports.
+
+
+### Authentication & Security
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **bcryptjs** | ^2.4.3 | Library for hashing and comparing passwords securely. Used to store user passwords safely in the database and verify them during login.
+| **jsonwebtoken** | ^9.0.0 | Implementation of JSON Web Tokens for secure authentication. Used to create and verify tokens for authenticated API requests.
+
+
+### Database & ORM
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **sequelize** | ^6.37.7 | Promise-based Node.js ORM for SQL databases. Provides an abstraction layer for database operations, making it easier to work with database models and relationships.
+| **mysql2** | ^3.14.1 | MySQL client for Node.js with focus on performance. Used as the database driver when MySQL is the chosen database.
+| **pg** | ^8.16.0 | PostgreSQL client for Node.js. Used as the database driver when PostgreSQL is the chosen database.
+
+
+### File Handling
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **multer** | ^1.4.5-lts.1 | Middleware for handling multipart/form-data, primarily used for file uploads. Used for handling photo uploads and document attachments.
+| **sharp** | ^0.34.1 | High-performance image processing library. Used for resizing, optimizing, and transforming uploaded images before storage.
+
+
+### Development Tools
+
+| Package | Version | Purpose
+|-----|-----|-----
+| **nodemon** | ^2.0.22 | Utility that monitors for changes in your source code and automatically restarts the server. Used during development to improve the development workflow.

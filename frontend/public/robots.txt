@@ -1,0 +1,20 @@
+# Obanshire Cub Scouts Website
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /leader/
+Disallow: /profile/
+Disallow: /helper/register
+Disallow: /login
+Disallow: /register
+
+Allow: /badges
+Allow: /events
+Allow: /photos
+Allow: /announcements
+Allow: /games
+Allow: /contact
+
+# Указываем расположение карты сайта
+Sitemap: https://yourscoutsite.com/sitemap.xml

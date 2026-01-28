@@ -1,0 +1,149 @@
+### Obanshire Cubs Frontend
+
+Frontend application for the Obanshire Cub Scouts website.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v16.x or higher recommended)
+- npm (comes with Node.js) or [Yarn](https://yarnpkg.com/)
+
+
+## Installation
+
+Follow these steps to set up the project locally:
+
+1. Clone the repository:
+
+```shellscript
+git clone [repository-url]
+cd obanshire-cubs-frontend
+```
+
+
+2. Install dependencies:
+
+```shellscript
+npm install
+# or if you use Yarn
+yarn install
+```
+
+
+
+
+## Running the Application
+
+### Development Mode
+
+To start the development server:
+
+```shellscript
+npm start
+# or
+yarn start
+```
+
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will automatically reload when you make changes to the code. You will also see any lint errors in the console.
+
+### Production Build
+
+To create a production build:
+
+```shellscript
+npm run build
+# or
+yarn build
+```
+
+This builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include hashes for cache management.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm start` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm run eject` - Ejects from create-react-app configuration (⚠️ one-way operation)
+
+
+## Project Structure
+
+```plaintext
+src/
+├── components/         # Reusable UI components
+│   ├── announcements/  # Announcement-related components
+│   ├── ui/             # Generic UI components
+│   └── ...
+├── pages/              # Page components for each route
+├── utils/              # Utility functions
+│   ├── api.js          # API client
+│   ├── auth.js         # Authentication utilities
+│   └── ...
+├── App.tsx             # Main application component with routing
+├── index.js            # Application entry point
+└── ...
+```
+
+## Browser Support
+
+### Production
+
+- Browsers with >0.2% market share
+- Not Internet Explorer
+- Not Opera Mini
+
+
+### Development
+
+- Latest Chrome
+- Latest Firefox
+- Latest Safari
+
+
+## Technologies
+
+This project uses:
+
+- [React](https://reactjs.org/) - UI library
+- [React Router](https://reactrouter.com/) - For routing
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Axios](https://axios-http.com/) - For API requests
+- [Framer Motion](https://www.framer.com/motion/) - For animations
+- [Lucide React](https://lucide.dev/) - For icons
+
+
+## Environment Setup
+
+The application expects a backend API to be running. By default, it will connect to the API at `http://localhost:5000` .
+
+You may need to create a `.env` file in the root directory with the following variables:
+
+```plaintext
+REACT_APP_API_URL=http://localhost:5000/api
+```
+
+## Connecting to the Backend
+
+Make sure the backend server is running before starting the frontend application. The frontend will make API calls to the backend server for data.
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. Make sure all dependencies are installed correctly
+2. Check if the backend server is running
+3. Verify your `.env` file has the correct API URL
+4. Clear your browser cache or try in incognito mode
+5. Check the console for any error messages
+
+
+## Additional Information
+
+For more details about the project structure, features, and functionality, please refer to the main project documentation.
